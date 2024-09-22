@@ -12,7 +12,8 @@ function sendMessage(){
 
 function connect(){
 	
-	let socket = new SockJS("/server1")
+	let socket = new SockJS("https://chatapp-production-ankit.up.railway.app/server1");
+
 	
 	stompClient = Stomp.over(socket)
 	
